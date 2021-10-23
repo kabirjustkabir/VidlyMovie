@@ -1,0 +1,60 @@
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+    justify-content: center;
+}
+.movie-card{
+    width: 20vw;
+    height: 40vh;
+    margin: 1rem;
+    position: relative;
+}
+.movie-title{
+    position: absolute;
+    top: 5vh;
+    text-align: center;
+    left:2vw;
+    right: 2vw;
+    color: white;
+}
+.movie-img{
+    height:40vh;
+    width:20vw;
+}
+.movie-button{
+    position: absolute;
+    bottom: 3vh;  
+}
+
+@media screen and (max-width:539px){
+    .movie-card{
+        width:70vw;
+        height: 40vh;
+        margin: 0.5rem;
+    }
+    .movie-img{
+        width:70vw;
+    }
+
+    .movie-title{
+        font-size: large;
+    }    
+}
+
+@media screen and (max-width:768px) and (min-width: 540px){
+    .movie-card{
+        width:40vw;
+        height: 40vh;   
+    }
+    .movie-img{
+        width:40vw;
+        height: 40vh;
+        
+        
+    }
+
+    .movie-title{
+        font-size: large;
+    }    
+}
